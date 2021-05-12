@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PiComponent } from './pi/pi.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PiComponent
   ],
   imports: [
     BrowserModule,
