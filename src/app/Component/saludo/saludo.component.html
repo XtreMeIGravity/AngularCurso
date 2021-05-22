@@ -1,0 +1,20 @@
+<!--Saludo-->
+<div>
+  <p>Hola : {{ name }}</p>
+  <label for="name-input">Escribe tu nombre</label>
+  <input
+    type="text"
+    id="name-input"
+    name="name-input"
+    placeholder="Nombre"
+    [(ngModel)]="name"
+  />
+  <button (click)="saludo()">Saludar</button>
+</div>
+<!--Imagen-->
+<div>
+  <img [src]="imageSRC" alt="" />
+  <li *ngFor="let image of images; index as i; first as isFirst">
+    <button (click)="changeRoute(i)">{{ image }}</button>
+  </li>
+</div>
