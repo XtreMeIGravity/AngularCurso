@@ -12,9 +12,9 @@ export class SaludoComponent implements OnInit {
 
   constructor() {
     this.images =[
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.y2mGm3h9G4X2GckUUV14kgHaE7%26pid%3DApi&f=1',
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.bCKHQ2YSa3OwdlFy5NEgJAHaEu%26pid%3DApi&f=1',
-      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.FIA0vs9n0BGAiyiw88xRlQHaEo%26pid%3DApi&f=1'
+      'assets/img/img1.jpg',
+      'assets/img/img2.jpg',
+      'assets/img/img3.jpg',
     ];
     this.imageSRC=this.images[0];
   }

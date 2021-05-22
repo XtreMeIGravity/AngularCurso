@@ -13,7 +13,7 @@
 </div>
 <!--Imagen-->
 <div>
-  <img [src]="imageSRC" alt="" />
+  <img [src]="imageSRC" alt=""  width="500px"/>
   <li *ngFor="let image of images; index as i; first as isFirst">
     <button (click)="changeRoute(i)">{{ image }}</button>
   </li>
