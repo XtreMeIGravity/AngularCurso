@@ -1,0 +1,12 @@
+<div>
+  <form>
+    <input name="marca" [(ngModel)]="nuevoCar.marca" placeholder="marca" />
+    <input name="modelo" [(ngModel)]="nuevoCar.modelo" placeholder="modelo" />
+    <button (click)="addToList()" type="button">Add Task</button>
+  </form>
+</div>
+
+<ul *ngFor="let item of ListCar; let i = index">
+  <li>{{ item.marca }} {{item.modelo}} <button (click)="borrar(i)">Editar</button> <button (click)="borrar(i)">Delete</button></li>
+  
+</ul>
