@@ -8,19 +8,32 @@ import { Car } from '../../model/car';
 })
 export class ToDoListComponent implements OnInit {
   public ListCar: Car[] = [];
-  public nuevoCar: Car;
+  public nuevoCar: Car = new Car();
+  public buttonAddHide = false;
+  public buttonEditHide = true;
 
-  constructor() {
-    this.nuevoCar = new Car();
-    this.nuevoCar.marca="vw";
-    this.nuevoCar.modelo="golf";
-  }
+  constructor() {}
 
   ngOnInit(): void {}
 
   addToList() {
-    let tmp:Car=this.nuevoCar;
+    let tmp: Car = this.nuevoCar;
     this.ListCar.push(tmp);
+    this.nuevoCar = new Car();
+  }
+  updateEdit() {
+    this.nuevoCar = new Car();
+    this.hideUnHide
+  }
+
+  editar(i: number) {
+    this.nuevoCar = this.ListCar[i];
+    this.hideUnHide
+  }
+
+  hideUnHide(){
+    this.buttonAddHide = !this.buttonAddHide;
+    this.buttonEditHide = !this.buttonEditHide;
   }
 
   borrar(i: number) {
